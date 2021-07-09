@@ -57,7 +57,7 @@ public class Page {
                     //Вариант 2
                     $("h1").$("div").shouldNot(exist);
                 }
-                public class Page4 {
+                public class Page5 {
                     @Test
                     void SearchSelectors(){
                         open("https://github.com/selenide/selenide");
