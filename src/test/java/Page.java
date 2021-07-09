@@ -16,7 +16,7 @@ public class Page {
         $("h1").$("div").shouldNot(exist);
     }
 
-    public class Page {
+    public class Page2 {
         @Test
         void SearchSelectors(){
             open("https://github.com/selenide/selenide");
