@@ -30,5 +30,20 @@ public class Page {
             $("h1").$("div").shouldNot(exist);
         }
 
+        public class Page3 {
+            @Test
+            void SearchSelectors(){
+                open("https://github.com/selenide/selenide");
+                //Вариант 1
+                $("div h1").should(exist);
+            }
+            @Test
+            void SearchAnySelectors(){
+                open("https://github.com/selenide/selenide");
+                //Вариант 2
+                $("h1").$("div").shouldNot(exist);
+            }
+
+
 
 }
