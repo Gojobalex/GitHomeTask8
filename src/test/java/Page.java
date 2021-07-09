@@ -15,4 +15,20 @@ public class Page {
         //Вариант 2
         $("h1").$("div").shouldNot(exist);
     }
+
+    public class Page {
+        @Test
+        void SearchSelectors(){
+            open("https://github.com/selenide/selenide");
+            //Вариант 1
+            $("div h1").should(exist);
+        }
+        @Test
+        void SearchAnySelectors(){
+            open("https://github.com/selenide/selenide");
+            //Вариант 2
+            $("h1").$("div").shouldNot(exist);
+        }
+
+
 }
